@@ -1,0 +1,98 @@
+:root {
+  --white-color: #f4f4f8;
+  --main-color: #c23616;
+  --yellow-color: #f0932b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clear {
+  clear: both;
+}
+
+@keyframes hienlentutu {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hienlentutu4 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hienlentugoc {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes playmacth {
+  from {
+    transform: scale(0.85);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes totop {
+  from {
+    height: 150px;
+  }
+
+  to {
+    height: 114px;
+  }
+}
+
+@keyframes hienlentugoc2 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}

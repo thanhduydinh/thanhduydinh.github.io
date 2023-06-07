@@ -1,0 +1,1151 @@
+/* mobile :width < 740px */
+/* xoay dọc  */
+@media only screen and (max-width: 25.875em) {
+  /* header */
+  .header {
+    display: block;
+    height: 150px;
+    width: 100%;
+    z-index: 1;
+    flex-wrap: nowrap;
+    top: 0;
+    position: fixed;
+  }
+
+  /* header bên trên */
+  .header__connect {
+    justify-content: space-between;
+    height: 25px;
+    width: 100%;
+    padding: 0px 10px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 25px;
+    z-index: 2;
+    display: flex;
+  }
+
+  .header__connect--wrapper {
+    display: flex;
+    align-content: center;
+    flex: 0 0 50%;
+    justify-content: left;
+  }
+
+  .header--sdt {
+    display: none;
+    align-content: center;
+    font-size: 10px;
+  }
+
+  .header--sdt:hover {
+    cursor: pointer;
+  }
+
+  .header--social {
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+  }
+
+  .social {
+    display: flex;
+    align-self: center;
+  }
+
+  .social li {
+    list-style: none;
+    margin: 0 8px;
+  }
+
+  .social li:hover {
+    cursor: pointer;
+    color: var(--yellow-color);
+  }
+
+  .header__connect--account {
+    display: flex;
+    justify-content: center;
+  }
+
+  .account {
+    display: flex;
+    font-size: 10px;
+  }
+
+  .account:hover {
+    cursor: pointer;
+  }
+
+  .account li {
+    list-style: none;
+    list-style: none;
+    margin: 0 6px;
+  }
+
+  .account li:hover {
+    cursor: pointer;
+    color: var(--yellow-color);
+  }
+
+  .account li:first-child ::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    top: 8px;
+    border-left: 1px solid var(--white-color);
+    right: 58px;
+  }
+
+  /* header bên dưới */
+  .header__content {
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 0px 10px;
+    background-color: rgba(54, 19, 84, 0.6);
+    color: var(--white-color);
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  /* logo  */
+  .header__content--logo {
+    font-size: 18px;
+    color: #f4f4f8;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__content--logo:hover {
+    cursor: pointer;
+  }
+
+  .header__content--logo-img img {
+    width: 28px;
+    margin-right: 6px;
+  }
+
+  /* nội dung  */
+  .header__content--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title--list {
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title--list li {
+    display: none;
+  }
+
+  .header--list {
+    margin: 0 10px;
+    position: relative;
+    display: block;
+    justify-self: center;
+    margin: 0px 10px;
+  }
+
+  .active {
+    margin: 0 10px;
+    position: relative;
+    display: block;
+    justify-self: center;
+    margin: 0px 20px;
+  }
+
+  .title--list li:hover {
+    cursor: pointer;
+  }
+
+  .active::after {
+    content: "";
+    position: relative;
+    width: calc(100% + 4px);
+    height: 2px;
+    background: linear-gradient(to right, #ee5a24, #3c40c6);
+    display: block;
+    opacity: 1;
+    animation: hienlentutu ease-in 0.25s;
+  }
+
+  .active2::after {
+    content: "";
+    position: relative;
+    width: calc(100% + 4px);
+    height: 2px;
+    background: linear-gradient(to right, #ee5a24, #3c40c6);
+    display: block;
+    opacity: 1;
+    animation: hienlentutu ease-in 0.3s;
+  }
+
+  .title--list li:hover .active::after {
+    opacity: 1;
+  }
+
+  /* giỏ hàng  */
+  .header__content--cart {
+    display: flex;
+    flex: 1;
+    margin-right: 20px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  i.ti-headphone {
+    font-size: 34px;
+    cursor: pointer;
+  }
+
+  .title-headphone {
+    position: absolute;
+    top: 90px;
+    right: -10px;
+    width: 400px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 2px 4px #ccc;
+    border: 2px;
+    animation: hienlentutu ease-in 0.3s;
+    display: none;
+  }
+
+  .active8 {
+    display: block;
+  }
+
+  .title--cart::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: -32px;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  .title--cart img {
+    margin: 0 18px;
+  }
+
+  .header__content--cart:hover .title--cart {
+    display: block;
+  }
+
+  i.ti-shopping-cart:hover {
+    cursor: pointer;
+    color: var(--yellow-color);
+  }
+
+  .cart--list {
+    font-size: 20px;
+    color: black;
+    margin: 6px 30px;
+    display: flex;
+  }
+
+  .cart--list-name {
+    flex: 9;
+  }
+
+  .cart--list-number {
+    flex: 1;
+  }
+
+  /* ảnh nền  */
+  .slider {
+    height: 310px;
+  }
+
+  .slider--img {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1900px;
+    position: relative;
+    display: none;
+  }
+
+  .slider--img img {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1900px;
+    position: relative;
+  }
+
+  .active5 {
+    display: block;
+    animation: hienlentutu ease-in 1s;
+  }
+
+  .slider--dots {
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active6,
+  .dot:hover {
+    background-color: #e74c3c;
+  }
+
+  /* Xem Trận đấu  */
+  .match {
+    width: 100%;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./asset/img/Hinh-nen-Manchester-United-dep-an-tuong-nhat.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .macth--wrapper {
+    background-image: url(./asset/img/background.jpg.webp);
+    width: 75%;
+    height: 70%;
+    border-radius: 2px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 2px 2px 6px #1e272e;
+  }
+
+  .macth--play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    transition: all 0.2s ease-in-out;
+    color: #32ff7e;
+    font-weight: bolder;
+  }
+
+  .macth--play a {
+    font-weight: 900;
+    color: #6ab04c;
+  }
+
+  i.ti-control-play {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+
+  i.ti-control-play:hover {
+    width: 40px;
+    height: 40px;
+    animation: playmacth ease-in 0.25s;
+    font-size: 25px;
+    background-color: #dfe4ea;
+    cursor: pointer;
+  }
+
+  .macth--club {
+    padding: 0 0 6px 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  .match--time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .match--hidden {
+    display: flex;
+    width: 15px;
+    height: 1px;
+    background-color: #fff;
+    margin: 8px auto;
+  }
+
+  .match--cup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  /* Đội hình  */
+  .lineup {
+    width: 100%;
+    margin: 15px 0;
+    background-color: white;
+  }
+
+  .lineup--header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin: 0 0 10px 0;
+  }
+
+  .lineup--headerHome {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(61, 61, 61);
+    margin: 0px 10px 0px 15px;
+  }
+
+  .lineup--headerHome::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 100%;
+    background-color: red;
+  }
+
+  .lineup--headerAway {
+    display: flex;
+    align-items: center;
+  }
+
+  .lineup--headerAway p {
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #ced6e0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px 0 0;
+  }
+
+  .lineup--headerAway img {
+    width: 40px;
+  }
+
+  /* team position */
+  .team--position {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .position-names {
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+    border-bottom: solid rgb(216, 216, 216) 1px;
+  }
+
+  .position--sub {
+    display: flex;
+    width: inherit;
+    justify-content: space-evenly;
+  }
+
+  .position--player {
+    width: 90px;
+    height: 90px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 6px 2px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hienlentutu1 {
+    animation: hienlentutu4 ease-in 2s;
+  }
+
+  .position--player img {
+    width: 96px;
+    transition: 1s;
+    background-color: #1e272e;
+  }
+
+  .position--player img:hover {
+    animation: hienlentugoc2 ease-in 100s;
+    width: 110px;
+    background-color: #1e272e;
+    cursor: pointer;
+  }
+
+  .position--info {
+    position: absolute;
+    bottom: 0%;
+    left: 6%;
+    font-weight: 900;
+    color: white;
+  }
+
+  .position--number {
+    font-size: 6px;
+  }
+
+  .activeLineup .\.position--number::after {
+    display: block;
+    content: " ";
+    height: 1px;
+    width: 30px;
+    background-color: red;
+    transition: 1s;
+  }
+
+  .\.position--number::after {
+    display: block;
+    content: " ";
+    height: 1px;
+    width: 10px;
+    background-color: red;
+    transition: 1s;
+  }
+
+  .position--name {
+    width: 50%;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+  }
+
+  /* lịch thi đấu  */
+  .schedule {
+    width: 100%;
+    background-color: #3f3f3f;
+  }
+
+  .schedule--header {
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0px 10px 0 15px;
+    padding: 10px 0 10px 0;
+  }
+
+  .schedule--header::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 35%;
+    background-color: red;
+  }
+
+  .schedule--body {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 40%;
+    display: flex;
+  }
+
+  .schedule--contents {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .schedule--content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+
+  .schedule--day {
+    margin: 0 10px;
+  }
+
+  .schedule--competitor p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 2px;
+  }
+
+  .schedule--competitor {
+    width: 200px;
+    height: 35px;
+    color: #000;
+    background-color: #f5cd79;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+  }
+
+  .schedule--time {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .schedule-homeaway {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    background-color: #c8d6e5;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    position: relative;
+    left: 80px;
+    top: -5px;
+    border-radius: 2px;
+  }
+
+  .schedule--hlv img {
+    width: 413px;
+    display: none;
+  }
+
+  /* bxh */
+  .bxh-wrapper {
+    width: 100%;
+    height: 600px;
+  }
+
+  .bxh--header {
+    font-size: 20px;
+    font-weight: 800;
+    color: #3d3d3d;
+    margin: 0px 10px 0 15px;
+    padding: 10px 0 10px 0;
+  }
+
+  .bxh--header::after {
+    display: block;
+    content: " ";
+    height: 3px;
+    width: 60%;
+    background-color: red;
+  }
+
+  .bxh--header img {
+    margin: 0 4px;
+    width: 30px;
+    margin: 0 4px;
+    position: relative;
+    top: 10px;
+  }
+
+  .bxh {
+    font-size: 12px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px 5%;
+    flex-wrap: wrap;
+  }
+
+  .header_bxh {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    color: #636e72;
+    height: 20px;
+  }
+
+  .header-name {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+  }
+
+  .bxh_nameValue {
+    display: flex;
+    width: 50%;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+  }
+
+  .bxh_nameValue li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .bxh_nameValue li:last-child {
+    color: #d63031;
+    font-size: 12px;
+  }
+
+  .body_bxh {
+    width: 100%;
+    height: 25px;
+  }
+
+  .body_bxh--wrapper {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ecedef;
+  }
+
+  .bxh-active1 {
+    border-left: 2px solid red;
+  }
+
+  .bxh-active2 {
+    border-left: 2px solid blue;
+  }
+
+  .bxh_clb {
+    display: flex;
+    width: 50%;
+    height: 16px;
+  }
+
+  .bxh_stt {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .club_logo {
+    width: 14%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 4px 0 2px;
+  }
+
+  .club_logo img {
+    width: 80%;
+  }
+
+  .bxh_clbName {
+    width: 84%;
+    font-size: 10px;
+  }
+
+  .bxh_value {
+    width: 50%;
+    display: flex;
+  }
+
+  .bxh_value li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .bxh_value li:last-child {
+    color: #d63031;
+    font-size: 14px;
+  }
+
+  /* footer  */
+  .footer {
+    background-color: #31124b;
+    padding: 2px 0px;
+  }
+
+  .footer .socials-list {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 4px 40px 0 10px;
+  }
+
+  .footer .socials-list a {
+    font-size: 14px;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  .footer .copyright {
+    font-size: 18px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socials-list i.ti-youtube {
+    color: red;
+  }
+
+  .socials-list i.ti-twitter {
+    color: #25ccf7;
+  }
+
+  .socials-list i.ti-pinterest {
+    color: #82589f;
+  }
+
+  .socials-list i.ti-linkedin {
+    color: #32ff7e;
+  }
+
+  .socials-list i.ti-facebook {
+    color: white;
+  }
+
+  .socials-list i.ti-instagram {
+    color: #fbc531;
+  }
+
+  /* form  */
+  .form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    display: none;
+  }
+  .form__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .form__login {
+    margin: 60px auto;
+    position: relative;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 40px;
+    animation: playmacth linear 0.2s;
+  }
+
+  .form-vadilation {
+    width: 100%;
+  }
+
+  .login__header {
+    width: 100%;
+  }
+
+  .login__exit {
+    position: relative;
+    top: -95px;
+    left: 245px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #636e72;
+  }
+
+  .heading {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 39px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 49px;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 23px;
+    width: 100%;
+    position: relative;
+  }
+
+  .form-label {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 7px;
+    font-family: Georgia, serif;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    padding: 0 7px 0 30px;
+    overflow: visible;
+    touch-action: manipulation;
+    border-bottom: 2px solid #d9d9d9;
+  }
+
+  .forgot__password {
+    text-align: right !important;
+    padding-top: 8px;
+    padding-bottom: 31px;
+    cursor: pointer;
+  }
+
+  .form__submit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form__submit--wrap {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .form__submit--btn {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 100%;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(
+      right,
+      #00dbde,
+      #fc00ff,
+      #00dbde,
+      #fc00ff
+    );
+
+    top: 0;
+    left: -100%;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form--btnlogin {
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    outline: none !important;
+    border: none;
+    background: transparent;
+    overflow: visible;
+    margin: 0;
+    touch-action: manipulation;
+  }
+
+  .form--btnlogin:hover {
+    background: -webkit-linear-gradient(
+      left,
+      #00dbde,
+      #fc00ff,
+      #00dbde,
+      #fc00ff
+    );
+    animation: hienlentutu ease-in 0.3s;
+    cursor: pointer;
+  }
+
+  .signupusing {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+    padding-bottom: 20px;
+    padding-top: 54px;
+    text-align: center !important;
+  }
+
+  .signupusing {
+    font-size: 20px;
+  }
+
+  .signupusing i {
+    margin: 4px 10px;
+    cursor: pointer;
+  }
+
+  .form-message {
+    color: red;
+    font-family: auto;
+    font-size: 14px;
+  }
+
+  /* chat  */
+  .chat {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    display: none;
+  }
+  .chat__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .chat__body {
+    margin: 70px 0 0 auto;
+    position: relative;
+    width: 396px;
+    background: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    animation: playmacth linear 0.2s;
+  }
+  .chat__form {
+    width: 100%;
+  }
+  .chat__header {
+    width: 100%;
+    height: 50px;
+  }
+
+  .chat__heading {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 39px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .chat__exit {
+    position: relative;
+    top: -85px;
+    left: 330px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #636e72;
+  }
+
+  .chat__content {
+    height: 550px;
+    background-color: #dfe6e9;
+    padding: 2px 0;
+    overflow: scroll;
+  }
+
+  .chat__render {
+    padding-bottom: 40px;
+    padding-left: 4px;
+  }
+
+  .chat__name {
+    margin: 0 0 0 10px;
+    font-size: 14px;
+  }
+
+  .chat__title {
+    background-color: #74b9ff;
+    border-radius: 0 10px 10px 10px;
+    padding: 5px 9px;
+    max-width: 85%;
+    word-wrap: break-word;
+    clear: left;
+    float: left;
+    font-size: 24px;
+  }
+
+  #chat__text {
+    width: 95%;
+  }
+
+  .chat__submit {
+    display: flex;
+  }
+
+  .chat__submit i {
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+  }
+}
